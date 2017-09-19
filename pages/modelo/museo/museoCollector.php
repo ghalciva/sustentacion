@@ -29,7 +29,7 @@ class museoCollector extends Collector
     
 //actualizar
   function updateMuseo($idmuseo,$nombre,$idciudadfk) {
-    $rows = self::$db->insertRow("UPDATE museo SET nombre= ? idciudadfk=? WHERE idmuseo= ? ", array("{$nombre}","{$idciudadfk}",$idmuseo));        
+    $rows = self::$db->insertRow("UPDATE museo SET nombre= ?, idciudadfk=? WHERE idmuseo= ? ", array("{$nombre}","{$idciudadfk}",$idmuseo));        
   }
 
 }

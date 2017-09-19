@@ -87,7 +87,7 @@ if (isset($_SESSION['user'])){
                             <div class="block">
                               <?php
                             echo "<p>Se eliminó el id No." . $idmuseo ."!</p>";
-                            $museoCollectorObj->deleteCiudad($idmuseo);
+                            $museoCollectorObj->deleteMuseo($idmuseo);
                         echo "<meta HTTP-EQUIV='REFRESH' CONTENT='1;URL=readMuseo.php'>";	
                               ?>
                         <a href="../../indexAdmin.php"><button class="btn btn-default btn-call-to-action">Regresar</button></a> 	           
